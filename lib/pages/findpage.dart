@@ -11,7 +11,10 @@ class findPage extends StatelessWidget {
           Row(
             children: [
               Row(
-                children: const [],
+                children: [
+                  Image.asset('assets/images/logo.png'),
+                  const Text('tinder')
+                ],
               )
             ],
           )
