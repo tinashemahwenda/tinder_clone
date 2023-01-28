@@ -11,7 +11,18 @@ class findPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
-            children: const [topBar()],
+            children: [
+              const Padding(
+                padding: EdgeInsets.only(bottom: 20.0),
+                child: topBar(),
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Stack(
+                  children: const [],
+                ),
+              )
+            ],
           ),
         ),
       ),
