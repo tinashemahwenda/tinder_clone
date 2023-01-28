@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinder_clone/pages/findpage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -18,9 +19,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   final List<Widget> _children = [
-    const Center(
-      child: Text('Home'),
-    ),
+    const findPage(),
     const Center(
       child: Text('Explore'),
     ),
