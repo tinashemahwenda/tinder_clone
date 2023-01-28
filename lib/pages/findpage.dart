@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinder_clone/utils/topBar.dart';
 
 class findPage extends StatelessWidget {
   const findPage({super.key});
@@ -6,19 +7,13 @@ class findPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Row(
-                children: [
-                  Image.asset('assets/images/logo.png'),
-                  const Text('tinder')
-                ],
-              )
-            ],
-          )
-        ],
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: const [topBar()],
+          ),
+        ),
       ),
     );
   }
